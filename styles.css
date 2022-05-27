@@ -63,6 +63,20 @@ p {
     margin-bottom: 30px;
 }
 
+.star>svg {
+    animation: star 1s infinite alternate;
+}
+
+@keyframes star {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
 .caption>h1 {
     margin-bottom: 15px;
 }
@@ -84,6 +98,7 @@ p {
 
 .number:hover {
     background-color: var(--light-grey);
+    transition: all 0.5s;
 }
 
 .number:hover>p {
@@ -107,6 +122,7 @@ button[type="submit"] {
     color: white;
     font-family: 'Overpass', sans-serif;
     margin: 0 10px 20px 10px;
+    letter-spacing: 2px;
 }
 
 button[type="submit"]:hover {
